@@ -2,7 +2,10 @@
 
 **Instructions: ** Define each of the following Git concepts.
 
-* What is version control?  Why is it useful?
-* What is a branch and why would you use one?
-* What is a commit? What makes a good commit message?
-* What is a merge conflict?
+* **What is version control? Why is it useful?**
+Version control allows us to view the entire history of revisions on one or more files and allows us to merge revisions made by different developers. Version control is useful for developers because it helps us to protect against mistakes by rolling back the document. It is also useful because it identifies who made which revision, when (date and timestamp), and what that revision was (description of revision).
+* **What is a branch and why would you use one?**
+A master branch is a default branch. It is always created whenever you create a git repository. Every other branch is always created by hand (git checkout -b new-branch-name). A branch is a duplicate of the master branch and its contents. When working on software or a development project, you want to make revisions to the new branch without messing up anything on your master branch. You should always work on a seperate branch and merge those changes onto the master branch. Branching also applies when you are working on a program with different features. You should make a branch for each feature and then merge those branches onto the master.
+* **What is a commit? What makes a good commit message?** A commit is a save point in your project. Git doesn't automatically save changes of your project. You have to follow the Git Workflow in order to commit modifications. There are a few parts to a commit: 1. it has a unique ID, author, timestamp, and description of the revision (git commit -m "revision message"). A good commit is a specific description of what you did. For example, add new feature, remove feature, resolve conflict in order to commit revision.
+* **What is a merge conflict?**
+A merge confict is an error that prevents you from merging the revisions made in the new branch to the master branch. Merge conflicts can be resolved by running git status and making revisions to the file that is causing the conflict. Git will usually mark-up the file with conflict markers.
