@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chore Wheel Form</title>
+</head>
+<body>
+  <form name="chore wheel" action="success.html" method="post">
+    <fieldset>
+      <div>
+        <label>Full name</label>
+        <input type="text" name="fullname">
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email">
+      </div>
+
+      <div>
+        <label>Housing name</label>
+        <input type="text" name="housingname">
+      </div>
+
+      <div>
+        <label>Class year</label>
+        <input type ="year" min="2016" max="2026" name="classyear">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div>
+        <label>Disabilities or medical conditions that would prevent you from completing any task</label>
+        <select name="limitations">
+          <option value="choice">Yes</option>
+          <option value="choice">No</option>
+          <option value="choice">Not sure</option>
+        </select>
+      </div>
+
+
+      <div>
+        <p><label>Preferred Chores</label></p>
+        <p><label><input type="checkbox" value="clean bathrooms" name="chore">clean bathrooms</label></p>
+        <p><label><input type="checkbox" value="wash dishes" name="chore">wash dishes</label></p>
+        <p><label><input type="checkbox" value="garbage duty" name="chore">garbage and recycle duty</label></p>
+        <p><label><input type="checkbox" value="tidy up shared spaces" name="chore">tidy up shared spaces</label></p>
+        <p><label><input type="checkbox" value="cooking" name="chore">cooking</label></p>
+        <p><label><input type="checkbox" value="sort mail" name="chore">sort mail</label></p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div>
+        <label>Return date to campus</label>
+        <input type="date" name="date">
+      </div>
+
+      <div>
+        <p><label>Any questions or concerns:</label>
+        <textarea colspan="50" rowspan="20"></textarea></p>
+      </div>
+
+      <div>
+        <input type="checkbox" name="student-agree" value="agree">
+        I agree to complete the chores assigned to me by the chore wheel for each week.
+      </div>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
