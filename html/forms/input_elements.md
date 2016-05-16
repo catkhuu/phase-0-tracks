@@ -1,1 +1,5 @@
-1. form <strong>action</strong> = post or login. "Action" in a form tag describes what you will see once the form is completed and submitted. For example, with the email and password form on the 2.4 lesson page, the action for that form was "login." The purpose of filling out that form is to login to whatever system you need to go onto. The action for the adventure form is to "post" or show the results, which is similar to the httpbin example (pizza order) form.
+* action in a form tag describes what you will see once the form is completed and submitted.
+* input can be used for a password attribute, email, or full name, or even date. It just defines what the active element type is.
+* label notes the action of the input
+* button defines the button for the form
+* div is used to contain the active html elements
