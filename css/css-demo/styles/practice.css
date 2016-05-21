@@ -1,0 +1,41 @@
+section#contact-info {
+  font-size: .8em;
+}
+
+section#contact-info p:hover {
+  background-color: #e9e5dc;
+}
+
+section.job {
+  background-color:  #e9e5dc;
+  border-radius: 15px;
+}
+
+.job h3 {
+  padding-left: 12px;
+  padding-top: 5px;
+  margin-top: 20px;
+}
+
+ul.accomplishments {
+  font-size: .8em;
+  padding-bottom: 10px;
+}
+
+section.volunteer-gig ul {
+  font-size: .8em;
+}
+
+section.volunteer-gig h3 {
+  padding-left: 12px;
+}
+
+/* From how I understand the "cascading" in cascading style sheets is simply put like this. CSS has a hierarchy of rules. I just role a CSS rule that would make the first child of the <li> in <ul> BLUE. I saved and tested it and it worked. I then wrote another rule that would select every <li> without a "featured" class and to make it RED. This second rule (red) overwrote the first rule (blue). In this way, new rules overwrite each other, which is what the "cascading" in CSS means to me.*/
+
+ul.accomplishments li:first-child {
+  color: blue;
+}
+
+ul.accomplishments li:not(.featured) {
+  color: red;
+}
