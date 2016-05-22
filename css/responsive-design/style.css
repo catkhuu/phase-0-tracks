@@ -15,7 +15,7 @@ cite {
 }
 
 /* you're welcome to edit the
-image, figure, and figcaption CSS if you'd like, 
+image, figure, and figcaption CSS if you'd like,
 but it's optional! */
 img {
   width: 100%;
@@ -30,3 +30,68 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+body {
+  max-width: 960px;
+  min-width: 30%;
+  padding-left: 7%;
+  padding-right: 5%;
+}
+
+section#external-links {
+  width: 20%;
+  display: block;
+  vertical-align: top;
+  float: right;
+}
+
+
+main {
+  max-width: 70%;
+}
+
+/* background-color of page displays hotpink when page width drops below 500px.
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
+*/
+
+@media screen and (max-width: 650px) {
+
+
+  section#external-links {
+    position: static;
+    height:auto;
+    width: 100%;
+    float: none;
+    margin: 0;
+    font-size: .8em;
+  }
+
+  #main {
+    margin: 0 0 15px;
+    position: static;
+    font-size: .8em;
+  }
+
+}
+
+/* font-size is not adjusted past 450px in case viewing is done on an iphone or android. Font-size is magnified on an iPhone.*/
+
+@media screen and (max-width: 450px) {
+
+  html {
+    -webkit-text-size-adjust: none;
+  }
+
+  section#external-links {
+    font-size: 100%;
+    padding: 15px 8px;
+  }
+
+}
+
+
+
