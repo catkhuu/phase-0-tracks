@@ -50,3 +50,46 @@ main {
   max-width: 70%;
 }
 
+/* background-color of page displays hotpink when page width drops below 500px.
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
+*/
+
+@media screen and (max-width: 650px) {
+
+
+  section#external-links {
+    position: static;
+    height:auto;
+    width: 100%;
+    float: none;
+    margin: 0;
+    font-size: .8em;
+  }
+
+  #main {
+    margin: 0 0 15px;
+    position: static;
+    font-size: .8em;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  html {
+    -webkit-text-size-adjust: none;
+  }
+
+  section#external-links {
+    font-size: 100%;
+    padding: 15px 8px;
+  }
+
+}
+
+
+
