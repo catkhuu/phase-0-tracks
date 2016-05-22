@@ -78,6 +78,8 @@ main {
 
 }
 
+/* font-size is not adjusted past 450px in case viewing is done on an iphone or android. Font-size is magnified on an iPhone.*/
+
 @media screen and (max-width: 450px) {
 
   html {
