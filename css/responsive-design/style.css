@@ -89,6 +89,15 @@ main {
   section#external-links {
     font-size: 100%;
     padding: 15px 8px;
+
+  body {
+    margin: 0 auto;
+  }
+
+  img {
+    position: center;
+  }
+
   }
 
 }
