@@ -1,3 +1,41 @@
 body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: georgia;
+}
+
+header {
+  background-color: blue;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  text-align: center;
+}
+
+.column-1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  height: 2000px;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.column-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  height: 2000px;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+footer {
+  clear: both;
   background-color: blue;
 }
