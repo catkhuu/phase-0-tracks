@@ -1,0 +1,21 @@
+#algorithm for using the elevator
+
+- Determine which floor you are on.
+- If the number of your destination floor is greater than the number of the floor you are currently on:
+    - Hit the up arrow by the elevator door
+- Else, if the number of your destination floor is less than the number of the floor your are currently on:
+    - Hit the down arrow by the elevator door.
+- Wait for the elevator doors to open.
+- Walk into the elevator.
+- Select your destination floor on the elevator pad.
+    - If in a hurry:
+      - Select your destination floor on the elevator pad.
+      - Also select the door-close symbol
+    - If in a good mood:
+      - Select your destination floor on the elevator pad.
+      - Also select the hold-door-open symbol for other species running towards the elevators.
+  - Otherwise: Wait for the doors to close to go to your destination floor.
+  - Check status of floor on the elevator pad.
+  - Wait for the doors to open and only step out of the elevator once you reach your destination floor.
+
+
