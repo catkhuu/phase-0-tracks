@@ -1,0 +1,45 @@
+#algorithm for using the elevator
+
+- Determine which floor you are on.
+- If the number of your destination floor is greater than the number of the floor you are currently on:
+    - Hit the up arrow by the elevator door
+- Else, if the number of your destination floor is less than the number of the floor your are currently on:
+    - Hit the down arrow by the elevator door.
+- Wait for the elevator doors to open.
+- Walk into the elevator.
+- Select your destination floor on the elevator pad.
+    - If in a hurry:
+      - Select your destination floor on the elevator pad.
+      - Also select the door-close symbol
+    - If in a good mood:
+      - Select your destination floor on the elevator pad.
+      - Also select the hold-door-open symbol for other species running towards the elevators.
+  - Otherwise: Wait for the doors to close to go to your destination floor.
+  - Check status of floor on the elevator pad.
+  - Wait for the doors to open and only step out of the elevator once you reach your destination floor.
+
+#algorithm for retrieving new messages from work voicemail
+
+- If checking work voicemail from an external line:
+  - Dial 215-685-4700
+  - Wait until the machine prompts you to enter your 5-digit voicemailbox number.
+    -If the greeting does not match your greeting:
+      - Dial 2 to go back to main menu
+      - Re-enter your 5-digit voicemailbox number
+    - If the greeting matches:
+      - Enter your 6-digit password
+      - Dial 11 to retrieve new messages
+- If checking work voicemail from desk phone:
+  - Dial 5-4700
+    - If greeting does not match:
+      - Dial 2 to change voicemailboxes
+      - Enter 5-digit voicemailbox number
+    - If greeting matches your greeting:
+      - Enter your 6-digit password
+      - Dial 11 to retrieve new messages
+
+
+
+
+
+
