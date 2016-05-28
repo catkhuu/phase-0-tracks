@@ -16,7 +16,7 @@ puts "What a lovely #{fur_color} coat you have!"
 
 puts "Good candidate for adoption?"
 adoption = gets.chomp
-if adoption == "yes"
+if ["Yes","yes","Y","y"].include? adoption
   puts "Let's find you a forever home!"
 else
   puts "Too bad, little one."
