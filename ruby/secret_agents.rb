@@ -7,22 +7,25 @@
 #- Combine the proceeding characters
 #- Print the combined proceeding characters
 
-puts "Enter your password"
-password = gets.chomp.downcase
-
 def encrypter(password)
   index = 0
 
   while index < password.length
-    password[index] = password[index].next!
+    str = "abcdefghijklmnopqrstuvwxyza" #added 'a' to end of alphabet in case password contains a 'z'. Otherwise, Ruby would return TypeError message - no implicit conversion of nil into string"#
+    current_letter = password[index]
+    current_letter_position = str.index(current_letter)
+    encrypted_letter_position = current_letter_position+1
+    encrypted_letter = str[encrypted_letter_position]
+    password[index] = encrypted_letter
     index +=1
-    return password
   end
+  return password
 end
 
-puts encrypter(password)
+puts encrypter("abc")
+puts encrypter("zed")
 
-  ##Decrypt
+##Decrypt
 # Identify the password produced by the encryption tool
 # Initiate a loop
 # Introduce the password into the loop
@@ -30,9 +33,6 @@ puts encrypter(password)
 # Identify each individual password character's alphabetic index
 # For each individual character in the password, identify the immediately preceeding character alphabetically
 # Print the combined preceeding characters
-
-puts "Enter the encrypted password"
-  encrypted_password = gets.chomp.downcase
 
 def decrypter(encrypted_password)
   index = 0
@@ -49,10 +49,16 @@ def decrypter(encrypted_password)
     current_letter_position = str.index(current_letter)
     decrypted_letter_position = current_letter_position-1
     decrypted_letter = str[decrypted_letter_position]
+      if current_letter == "a"
+        decrypted_letter = "z"
+      end
     encrypted_password[index] = decrypted_letter
     index +=1
-    return encrypted_password
   end
+  return encrypted_password
 end
 
-puts decrypter(encrypted_password)
+puts decrypter("bcd")
+puts decrypter("afe")
+
+
