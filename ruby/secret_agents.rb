@@ -60,5 +60,6 @@ end
 
 puts decrypter("bcd")
 puts decrypter("afe")
-
+puts decrypter(encrypter("swordfish"))
+#when decrypter(encrypter("swordfish")) is called, 'swordfish' is printed as if nothing happened to it and that is the way it should appear when nest the encrypter method in the decrypter method. You are encrypting 'swordfish' FIRST and then decrypting the encrypted 'swordfish' thereafter.
 
