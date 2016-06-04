@@ -1,3 +1,28 @@
+## Release 2
+# write method_1
+def build_array(x,y,z)
+  arr = []
+  arr.push(x,y,z)
+end
+
+# call method
+
+p build_array(1, "two", nil)
+
+
+# write method_2
+def add_to_array(arr, value)
+  arr.push(value)
+end
+
+#call method
+
+p add_to_array([], "a")
+p add_to_array(["a", "b", "c", 1, 2], 3)
+p add_to_array(["walk", "run"], "sprint")
+
+
+## Release 1
 pets = []
 p pets
 pets.push("corgi", "bealge", "english bull dog", "piglet", "greyhound")
