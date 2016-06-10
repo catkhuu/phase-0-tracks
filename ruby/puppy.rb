@@ -10,7 +10,7 @@
 # friendly: yes
 # ears: pointed
 # eyes: human-like
-# stature: varies, but mostly lean
+# composition: varies, but mostly lean
 # leg length: short
 
 # BEHAVIOR
