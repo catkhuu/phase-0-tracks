@@ -29,5 +29,7 @@ end
 
 human = Human.new
 p human.yell_angrily("Hey kid, get off my stoop")
+p human.yelling_happily("Let's unite the democratic party")
 dolphin = Dolphin.new
 p dolphin.yelling_happily("We are all friends of this planet")
+p dolphin.yell_angrily("There's trash floating in my home")
