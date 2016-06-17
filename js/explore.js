@@ -7,3 +7,13 @@
 //   - reverse array using .reverse
 //   - convert array back into a string using .join
 // ELSE if var str is not a string, then return "Error: inputted value not a string. Please input a string. (Ex. 'hello')"
+
+function reverse(str) {
+if (typeof str === 'string' || str instanceof String)
+  // it's a string
+  return str.split('').reverse().join('');
+else
+// it's not a string
+  return console.log("Error: inputted value not a string. Please input a string. (Ex. 'hello')");
+
+}
