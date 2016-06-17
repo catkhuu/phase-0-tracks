@@ -6,6 +6,8 @@
 //   - take string and convert to array using .split
 //   - reverse array using .reverse
 //   - convert array back into a string using .join
+//   - store result of reversed string in new variable reverseStr
+//   - return reverseStr
 // ELSE if var str is not a string, then return "Error: inputted value not a string. Please input a string. (Ex. 'hello')"
 
 function reverse(str) {
@@ -14,13 +16,15 @@ if (typeof str === 'string' || str instanceof String)
   return str.split('').reverse().join('');
 else
 // it's not a string
-  return console.log("Error: inputted value not a string. Please input a string. (Ex.'hello')");
+  reverseStr =  console.log("Error: inputted value not a string. Please input a string. (Ex.'hello')");
+  return reverseStr;
 
 }
 
 // DRIVER CODE
 console.log(reverse("mary"));
 console.log(reverse(8));
+console.log(reverse("mississippi"));
 
 
 
