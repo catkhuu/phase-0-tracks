@@ -14,10 +14,13 @@ if (typeof str === 'string' || str instanceof String)
   return str.split('').reverse().join('');
 else
 // it's not a string
-  return console.log("Error: inputted value not a string. Please input a string. (Ex. 'hello')");
+  return console.log("Error: inputted value not a string. Please input a string. (Ex.'hello')");
 
 }
 
-
+// DRIVER CODE
 console.log(reverse("mary"));
 console.log(reverse(8));
+
+
+
