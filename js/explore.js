@@ -17,3 +17,7 @@ else
   return console.log("Error: inputted value not a string. Please input a string. (Ex. 'hello')");
 
 }
+
+
+console.log(reverse("mary"));
+console.log(reverse(8));
