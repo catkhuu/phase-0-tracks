@@ -52,3 +52,20 @@ function Vehicle(model, manufacturer, color, hawaiianDashboardDoll) {
 
   console.log("VEHICLE INITIALIZATION COMPLETE!");
 }
+
+// CALL 'CLASS'/ CONSTRUCTOR FUNCTION
+console.log("Let's get a car ...");
+//call constructor function - vehicle
+var vehicle1 = new Vehicle("Beetle", "Volkswagon", "yellow", true);
+console.log(vehicle1);
+console.log("Hear the horsepower on this baby:");
+vehicle1.revEngine();
+console.log("----");
+
+console.log("You can never have too many cars. Let's get another one...");
+var vehicle2 = new Vehicle("Prius", "Toyota", "silve", false);
+console.log(vehicle2.model);
+console.log("Let's hear the horsepower on this one, too:");
+vehicle2.revEngine();
+console.log("What a winner this one is. Fast and Furious 12 in the future? I think YES!")
+console.log("----")
