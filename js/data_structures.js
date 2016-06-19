@@ -29,5 +29,7 @@ function horseDirectory() {
   }
 }
 
+//DRIVER CODE
 addColor("neon grey");
 addHorseName("Chancie");
+horseDirectory();
