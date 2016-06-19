@@ -29,7 +29,26 @@ function horseDirectory() {
   }
 }
 
-//DRIVER CODE
-addColor("neon grey");
-addHorseName("Chancie");
-horseDirectory();
+// COMMENTED OUT DRIVER CODE
+// addColor("neon grey");
+// addHorseName("Chancie");
+// horseDirectory();
+
+// CONSTRUCTOR FUNCTION - VEHICLE
+var vehicle = {model: '500L', manufacturer: 'Fiat', color: 'green', hawaiianDashboardDoll: true };
+
+function Vehicle(model, manufacturer, color, hawaiianDashboardDoll) {
+  console.log("Hot off the used car lot:", this);
+  //'this' refers to the instance of vehicle that we are making
+
+  //this.model is the Ruby equivalent of @model when creating a Class with instance variables
+  this.model = model;
+  this.manufacturer = manufacturer;
+  this.color = color;
+  this.hawaiianDashboardDoll = hawaiianDashboardDoll;
+
+  //function
+  this.revEngine = function() { console.log("vroom! vroom!"); };
+
+  console.log("VEHICLE INITIALIZATION COMPLETE!");
+}
