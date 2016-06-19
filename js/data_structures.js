@@ -20,6 +20,14 @@ console.log(horseNames);
 // access horseNames and colors in array by using .slice(begin, end). begin = i, while end = (i+1). To pair 'Ranger' with 'royal blue' it would be horseId[horseNames.slice(1,(1+2))] = colors.slice(1,(1+2));
 // print object horseId
 // problem with this method is it will return slice for each key-value pair until i = colors.length. It won't just return the final object with all 5 key-value pairs.
+function horseDirectory() {
+  var horseId = new Object();
+  for(var i = 0; i < colors.length; i++) {
+
+  horseId[horseNames.slice(i,(i+1))] = colors.slice(i,(i+1));
+  console.log(horseId);
+  }
+}
 
 addColor("neon grey");
 addHorseName("Chancie");
