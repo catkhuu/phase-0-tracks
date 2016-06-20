@@ -9,6 +9,17 @@ var sorted = arrayOfStrings.sort(function (a, b) { return b.length - a.length })
 console.log(sorted[0]);
 }
 
+// MATCH KEY-VALUE
+// input: two objects (e.g. {name: "Steven", age: 54}, {name: "Tamir", age: 54} )
+// output: true if there is AT LEAST one key-value pair match between two objects. false is there is no key-value pair match.
+// create four empty arrays names keys, values, keys2, and values2.
+// push items in object1 into keys array and similarly for items in object2 to keys2 array
+// push items in object1 into values array and similarly for items in object2 to values2 array.
+// see if items in values array matches any items in values2 array.
+// do this by iterating through both arrays, if AT LEAST one item of values[1] -- current item, equals values2[j], then return true.
+// Otherwise, return false. If === as opposed to ==, then my driver code would return false with the exception of the first example (Steven and Tamir's age).
+
+
 longestStr(["long phrase","longest phrase","longer phrase"]);
 longestStr(["to the moon and back", "orlando strong", "once upon a time"]);
 longestStr(["bobby", "tom", "maryanne", "lucy the dragon slayer"]);
