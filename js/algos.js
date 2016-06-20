@@ -75,3 +75,4 @@ console.log(match_pair({name: "Steven", age: 54}, {name: "Tamir", age: 54}));//r
 console.log(match_pair({color: "green", favoriteFood: "pizza", age: "23"}, {allergies: "gluten", HamiltonViewings: 24, hairColor: "red"}));//returns false
 match_pair({age:30}, {favoriteNumber: "30"});//returns true
 randomString(5);
+repeat(10);
