@@ -34,6 +34,19 @@ for (var y in object2) {
   values2.push(object2[y]);
 }
 
+// values = ["Steve", 54], values2 = ["Tamir", 54]
+for (i=0; i < values.length; i++) {
+    for (j=0; j < values2.length; j++) {
+      if (values[i] == values2[j]) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+
+}
+
 
 longestStr(["long phrase","longest phrase","longer phrase"]);
 longestStr(["to the moon and back", "orlando strong", "once upon a time"]);
