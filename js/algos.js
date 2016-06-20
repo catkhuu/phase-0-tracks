@@ -61,6 +61,13 @@ function randomString(num) {
     return result;
 }
 
+// takes number inputted and runs randomString function that number of times.
+function repeat(number) {
+    for (var i = 0; i < number; i++) {
+        randomString(number);
+    }
+}
+
 longestStr(["long phrase","longest phrase","longer phrase"]);
 longestStr(["to the moon and back", "orlando strong", "once upon a time"]);
 longestStr(["bobby", "tom", "maryanne", "lucy the dragon slayer"]);
