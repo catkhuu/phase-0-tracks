@@ -47,6 +47,19 @@ for (i=0; i < values.length; i++) {
 
 }
 
+// RANDOM STRINGS GENERATOR
+var array = [];
+function randomString(num) {
+    var result = ''; // random string generated with given number to specify string length
+    var  alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   // var array = []; -- made var array accessible outside of randomString function by moving it outside of this function. Otherwise, would not have been able to call array values after repeat function for longestStr.
+    for (var i = 0; i < num; i++) {
+     result += alpha[Math.floor(Math.random() * alpha.length)];
+     array.push(result);
+    }
+    console.log(array);
+    return result;
+}
 
 longestStr(["long phrase","longest phrase","longer phrase"]);
 longestStr(["to the moon and back", "orlando strong", "once upon a time"]);
