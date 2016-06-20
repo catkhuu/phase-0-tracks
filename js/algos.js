@@ -46,6 +46,19 @@ for (i=0; i < values.length; i++) {
 }
 
 // RANDOM STRINGS GENERATOR
+// input: number (as integer)
+// output: - an array of strings with varying lengths.          - max string length should be number given, while min string length should be 1 (string length >= 1).
+//         - the number of items (strings) in the array is equal to the number given.
+//         - strings should contain random alpha-charcters (no numerals)
+// num = 3, and should generate an array like this:  ['at', 'tD', 'yqx']
+// declare an empty array outside of the function to store the results (random strings) that are generated
+// declare var result (string). result will contain the random generated string
+// declare var alpha = to contain the alphabet (both uppercase and lowercase letters). result will only contain the letters that are contained in alpha.
+// i = 0, and while i is less than the given number, generate a random string (result) with characters from alpha. random character in result will increase by one until number given. If given number is 5, then random characters generated from alpha will result in the longest string being 5 (number given) and the shortest string being 1.
+// to generate random character (from alpha), establish a range (alpha.length, 0 to 52) that will act as an index to access characters from alpha.
+// make sure integer is round and not a float
+// each random string of characters that is generated will be stored in var result, where each random generation of a string will be pushed in the array. For example, with a given number of 5, the array might look like this after all 5 random generations of strings. array = ['a', 'ef', 'ZIg', 'lPxi', 'qrRIT']
+// print array and return strings stored in result
 var array = [];
 function randomString(num) {
     var result = ''; // random string generated with given number to specify string length
