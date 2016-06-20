@@ -76,3 +76,4 @@ console.log(match_pair({color: "green", favoriteFood: "pizza", age: "23"}, {alle
 match_pair({age:30}, {favoriteNumber: "30"});//returns true
 randomString(5);
 repeat(10);
+longestStr(array);
