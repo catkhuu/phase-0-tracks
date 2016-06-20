@@ -8,3 +8,7 @@ var sorted = arrayOfStrings.sort(function (a, b) { return b.length - a.length })
 
 console.log(sorted[0]);
 }
+
+longestStr(["long phrase","longest phrase","longer phrase"]);
+longestStr(["to the moon and back", "orlando strong", "once upon a time"]);
+longestStr(["bobby", "tom", "maryanne", "lucy the dragon slayer"]);
