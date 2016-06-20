@@ -19,6 +19,21 @@ console.log(sorted[0]);
 // do this by iterating through both arrays, if AT LEAST one item of values[1] -- current item, equals values2[j], then return true.
 // Otherwise, return false. If === as opposed to ==, then my driver code would return false with the exception of the first example (Steven and Tamir's age).
 
+function match_pair(object1, object2) {
+  var keys = [];
+  var values = [];
+  var keys2 = [];
+  var values2 = [];
+for (var x in object1) {
+  keys.push(x);
+  values.push(object1[x]);
+}
+
+for (var y in object2) {
+  keys2.push(y);
+  values2.push(object2[y]);
+}
+
 
 longestStr(["long phrase","longest phrase","longer phrase"]);
 longestStr(["to the moon and back", "orlando strong", "once upon a time"]);
